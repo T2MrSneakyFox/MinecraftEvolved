@@ -1,7 +1,7 @@
 # MinecraftEvolved
 Minecraft Evolved+
 
-#EVOLVED
+EVOLVED
 
 Purpose, this plugin makes your minecraft world more intresting and more realistic
 Instead of the usual redstone this gets replaced with wires and power,
