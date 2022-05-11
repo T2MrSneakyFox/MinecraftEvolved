@@ -1,10 +1,11 @@
 package com.example.evolved.datagen;
 
+import com.example.evolved.Evolved;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = Evolved.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerator {
 
     @SubscribeEvent

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "evolved:test_ore_overworld",
+    "evolved:test_ore_nether",
+    "evolved:test_ore_end",
+    "evolved:test_ore_deepslate"
+  ]
+}
