@@ -20,7 +20,7 @@ public class DataGenerator {
 
         if (event.includeClient()) {
             generator.addProvider(new TutBlockStates(generator, event.getExistingFileHelper()));
-            generator.addProvider(new TutBlockModels(generator, event.getExistingFileHelper()));
+            generator.addProvider(new TutItemModels(generator, event.getExistingFileHelper()));
             generator.addProvider(new TutLanguageProvider(generator, "en_us"));
         }
 

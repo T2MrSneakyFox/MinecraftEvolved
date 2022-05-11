@@ -1,4 +1,21 @@
 package com.example.evolved.datagen;
 
-public class TutLootTables {
+
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.DataProvider;
+import net.minecraft.data.HashCache;
+
+import java.io.IOException;
+
+
+public class TutLootTables extends com.example.evolved.datagen.BaseLootTableProvider {
+
+    public TutLootTables(DataGenerator dataGeneratorIn) {
+        super(dataGeneratorIn);
+    }
+
+    @Override
+    protected void addTables() {
+
+    }
 }
