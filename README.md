@@ -44,3 +44,4 @@ Paying your friends is also an option!
 - /buy - opens world shop
 - /sell - sells your current hand
 - /pay - pay other people
+- /ecmds
