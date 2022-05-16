@@ -14,7 +14,7 @@ public class TutItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        withExistingParent(Registration.Test_ORE_OVERWORLD_ITEM.get().getRegistryName().getPath(), modLoc("block/test_ore_overworld"));
+        //template withExistingParent(Registration.Test_ORE_OVERWORLD_ITEM.get().getRegistryName().getPath(), modLoc("block/test_ore_overworld"));
 
     }
 }

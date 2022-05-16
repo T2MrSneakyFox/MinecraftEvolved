@@ -10,6 +10,6 @@ public class TutBlockStates extends BlockStateProvider {
     public TutBlockStates(DataGenerator gen, ExistingFileHelper helper) {super(gen, Evolved.MODID, helper);}
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(Registration.Test_ORE_OVERWORLD.get());
+
     }
 }
