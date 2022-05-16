@@ -17,13 +17,15 @@ public class TutItemTags extends ItemTagsProvider {
     @Override
     protected void addTags() {
         tag(Tags.Items.ORES)
-                .add(Registration.Test_ORE_OVERWORLD_ITEM.get())
                 .add(Registration.NICKEL_ORE_ITEM.get())
                 .add(Registration.OBSIDIAN_ORE_ITEM.get())
                 .add(Registration.ENDER_ORE_ITEM.get())
                 .add(Registration.OBSIDIAN_ORE_ITEM.get());
-        tag(Tags.Items.INGOTS);
-        tag(Tags.Items.DUSTS);
+        tag(Tags.Items.INGOTS)
+                .add(Registration.LITHIUM_INGOT.get())
+                .add(Registration.COBALT_INGOT.get());
+        tag(Tags.Items.DUSTS)
+                .add(Registration.OBSIDIAN_DUST_ITEM.get());
 
     }
 

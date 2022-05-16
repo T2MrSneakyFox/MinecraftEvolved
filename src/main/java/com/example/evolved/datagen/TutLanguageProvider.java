@@ -19,7 +19,7 @@ public class TutLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add("itemgroup." + TAB_NAME, "Tutorial");
+        add("item group." + TAB_NAME, "Tutorial");
         //items
         add(Registration.SALT_WATER_ITEM.get(), "Salt water");
         add(Registration.ELECTRICAL_CONDUIT_ITEM.get(), "Electrical conduit");

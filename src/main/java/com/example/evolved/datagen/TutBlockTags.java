@@ -14,17 +14,17 @@ public class TutBlockTags extends BlockTagsProvider {
     }
     @Override
     protected void addTags() {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(Registration.Test_ORE_OVERWORLD.get());
-        tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(Registration.Test_ORE_OVERWORLD.get());
-        tag(Tags.Blocks.ORES)
-                .add(Registration.Test_ORE_OVERWORLD.get());
+//        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+//                .add(Registration.Test_ORE_OVERWORLD.get());
+//        tag(BlockTags.NEEDS_IRON_TOOL)
+//                .add(Registration.Test_ORE_OVERWORLD.get());
+//        tag(Tags.Blocks.ORES)
+//                .add(Registration.Test_ORE_OVERWORLD.get());
 
     }
 
     @Override
     public String getName() {
-        return "Test ore tutorial tag";
+        return "Test123";
     }
 }
