@@ -27,9 +27,6 @@ public class Registration {
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f);
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ITEM_GROUP);
 
-    public static final RegistryObject<Block> Test_ORE_OVERWORLD = BLOCKS.register("test_ore_overworld", () -> new Block(ORE_PROPERTIES));
-    public static final RegistryObject<Item> Test_ORE_OVERWORLD_ITEM = fromBlock(Test_ORE_OVERWORLD);
-
     public static final RegistryObject<Block> NICKEL_ORE_OVERWORLD = BLOCKS.register("nickel_ore_overworld", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> NICKEL_ORE_ITEM = fromBlock(NICKEL_ORE_OVERWORLD);
 
@@ -39,19 +36,22 @@ public class Registration {
     public static final RegistryObject<Block> ENDER_ORE_END = BLOCKS.register("ender_ore_end", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> ENDER_ORE_ITEM = fromBlock(ENDER_ORE_END);
 
-
-
-
-
-    // items
     //template public static final RegistryObject<Item>  = ITEMS.register("", () -> new Item(ITEM_PROPERTIES));
-    public static final RegistryObject<Item> LITHIUM_ITEM = ITEMS.register("lithium_item",() -> new Item(ITEM_PROPERTIES));
-    public static final RegistryObject<Item> COBALT_ITEM = ITEMS.register("cobalt_item",() -> new Item(ITEM_PROPERTIES));
+
+    //items
+    //items/ores
+    public static final RegistryObject<Block> ENDER_ORE_END = BLOCKS.register("ender_ore_end", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> ENDER_ORE_ITEM = fromBlock(ENDER_ORE_END);
+
     public static final RegistryObject<Item> SALT_WATER_ITEM = ITEMS.register("salt_water_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> WIRE_ITEM = ITEMS.register("wire_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> ELECTRICAL_CONDUIT_ITEM = ITEMS.register("electrical_conduit_item", () -> new Item(ITEM_PROPERTIES));
+    //items/ingots
+    public static final RegistryObject<Item> LITHIUM_INGOT = ITEMS.register("lithium_ingot",() -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot",() -> new Item(ITEM_PROPERTIES));
+    
+    //items/dust
     public static final RegistryObject<Item> OBSIDIAN_DUST_ITEM = ITEMS.register("obsidian_dust", () -> new Item(ITEM_PROPERTIES));
-
 
 
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {

@@ -20,17 +20,19 @@ public class TutLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         add("itemgroup." + TAB_NAME, "Tutorial");
-
-        add(Registration.Test_ORE_OVERWORLD_ITEM.get(), "Test ore");
-        add(Registration.COBALT_ITEM.get(), "Cobalt");
-        add(Registration.WIRE_ITEM.get(), "Copper wire");
-        add(Registration.LITHIUM_ITEM.get(), "Lithium");
-        add(Registration.OBSIDIAN_DUST_ITEM.get(), "Obsidian dust");
+        //items
         add(Registration.SALT_WATER_ITEM.get(), "Salt water");
         add(Registration.ELECTRICAL_CONDUIT_ITEM.get(), "Electrical conduit");
+        add(Registration.WIRE_ITEM.get(), "Copper wire");
+        //items/ores
+        add(Registration.OBSIDIAN_ORE_ITEM.get(), "Obsidian Ore");
         add(Registration.NICKEL_ORE_ITEM.get(), "Nickel ore");
-        add(Registration.COPPER_ORE_ITEM.get(), "Copper ore");
         add(Registration.OBSIDIAN_ORE_ITEM.get(), "Obsidian Ore");
         add(Registration.ENDER_ORE_ITEM.get(), "Ender Ore");
+        //items/ingots
+        add(Registration.COBALT_INGOT.get(), "Cobalt ingot");
+        add(Registration.LITHIUM_INGOT.get(), "Lithium ingot");
+        //items/dust
+        add(Registration.OBSIDIAN_DUST_ITEM.get(), "Obsidian dust");
     }
 }
