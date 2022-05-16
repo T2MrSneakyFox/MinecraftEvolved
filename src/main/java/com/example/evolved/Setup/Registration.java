@@ -50,7 +50,14 @@ public class Registration {
 
     //items/dust
     public static final RegistryObject<Item> OBSIDIAN_DUST_ITEM = ITEMS.register("obsidian_dust", () -> new Item(ITEM_PROPERTIES));
-
+    public static final RegistryObject<Item> ONE_COIN = ITEMS.register("1_coin", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> TWO_COIN = ITEMS.register("2_coin", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> FIVE_BUCKS = ITEMS.register("5_bucks", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> TEN_BUCKS = ITEMS.register("10_bucks", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> TWENTY_BUCKS = ITEMS.register("20_bucks", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> FIFTY_BUCKS = ITEMS.register("50_bucks", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> HUNDERD_BUCKS = ITEMS.register("100_bucks", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> TWOHUNDERD_BUCKS = ITEMS.register("200_bucks", () -> new Item(ITEM_PROPERTIES));
 
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES));
