@@ -1,7 +1,14 @@
 {
-  "block.evolved.test_ore_deepslate": "Test ore",
-  "block.evolved.test_ore_end": "Test ore",
-  "block.evolved.test_ore_nether": "Test ore",
+  "block.evolved.copper_ore_overworld": "Copper ore",
+  "block.evolved.ender_ore_end": "Ender Ore",
+  "block.evolved.nickel_ore_overworld": "Nickel ore",
+  "block.evolved.obsidian_ore_overworld": "Obsidian Ore",
   "block.evolved.test_ore_overworld": "Test ore",
+  "item.evolved.cobalt_item": "Cobalt",
+  "item.evolved.electrical_conduit_item": "Electrical conduit",
+  "item.evolved.lithium_item": "Lithium",
+  "item.evolved.obsidian_dust": "Obsidian dust",
+  "item.evolved.salt_water_item": "Salt water",
+  "item.evolved.wire_item": "Copper wire",
   "itemgroup.TestTab": "Tutorial"
 }

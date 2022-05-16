@@ -18,9 +18,13 @@ public class TutItemTags extends ItemTagsProvider {
     protected void addTags() {
         tag(Tags.Items.ORES)
                 .add(Registration.Test_ORE_OVERWORLD_ITEM.get())
-                .add(Registration.Test_ORE_NETHER_ITEM.get())
-                .add(Registration.Test_ORE_END_ITEM.get())
-                .add(Registration.Test_ORE_DEEPSLATE_ITEM.get());
+                .add(Registration.NICKEL_ORE_ITEM.get())
+                .add(Registration.OBSIDIAN_ORE_ITEM.get())
+                .add(Registration.ENDER_ORE_ITEM.get())
+                .add(Registration.OBSIDIAN_ORE_ITEM.get());
+        tag(Tags.Items.INGOTS);
+        tag(Tags.Items.DUSTS);
+
     }
 
     @Override

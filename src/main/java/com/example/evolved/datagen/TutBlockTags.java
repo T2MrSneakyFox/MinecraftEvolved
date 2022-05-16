@@ -15,20 +15,12 @@ public class TutBlockTags extends BlockTagsProvider {
     @Override
     protected void addTags() {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(Registration.Test_ORE_OVERWORLD.get())
-                .add(Registration.Test_ORE_NETHER.get())
-                .add(Registration.Test_ORE_END.get())
-                .add(Registration.Test_ORE_DEEPSLATE.get());
+                .add(Registration.Test_ORE_OVERWORLD.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(Registration.Test_ORE_OVERWORLD.get())
-                .add(Registration.Test_ORE_NETHER.get())
-                .add(Registration.Test_ORE_END.get())
-                .add(Registration.Test_ORE_DEEPSLATE.get());
+                .add(Registration.Test_ORE_OVERWORLD.get());
         tag(Tags.Blocks.ORES)
-                .add(Registration.Test_ORE_OVERWORLD.get())
-                .add(Registration.Test_ORE_NETHER.get())
-                .add(Registration.Test_ORE_END.get())
-                .add(Registration.Test_ORE_DEEPSLATE.get());
+                .add(Registration.Test_ORE_OVERWORLD.get());
+
     }
 
     @Override
