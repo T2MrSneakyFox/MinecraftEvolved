@@ -67,7 +67,7 @@ public class Registration {
     public static final RegistryObject<Item> TWOHUNDERD_BUCKS = ITEMS.register("200_bucks", () -> new Item(ITEM_PROPERTIES));
 
     //costume tags
-    public static final Tags.IOptionalNamedTag<Item> EVOLVED_DUSTS = ItemTags.createOptional(new ResourceLocation(MODID,"evolved_dusts"));
+    public static final Tags.IOptionalNamedTag<Item> EVOLVED_ITEMS = ItemTags.createOptional(new ResourceLocation(MODID,"evolved_items"));
 
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES));

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "evolved:wire_item",
+    "evolved:salt_water_item",
+    "evolved:electrical_conduit_item"
+  ]
+}

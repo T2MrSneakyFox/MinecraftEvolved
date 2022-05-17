@@ -30,7 +30,7 @@ public class TutItemModels extends ItemModelProvider {
         // items/coins
 
         //items
-
+        singleTexture(Registration.SALT_WATER_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/sea_salt_item"));
 
 
 
