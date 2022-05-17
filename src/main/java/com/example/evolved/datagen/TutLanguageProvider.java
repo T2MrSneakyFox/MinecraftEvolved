@@ -32,13 +32,13 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.COAL_DUST_ITEM.get(), "Coal dust");
         add(Registration.COBALT_DUST_ITEM.get(), "Cobalt dust");
         //items/money
-        add(Registration.ONE_COIN.get(), "€1" );
-        add(Registration.TWO_COIN.get(), "€2" );
-        add(Registration.FIVE_BUCKS.get(), "€5" );
-        add(Registration.TEN_BUCKS.get(), "€10" );
-        add(Registration.TWENTY_BUCKS.get(), "€20" );
-        add(Registration.FIFTY_BUCKS.get(), "€50" );
-        add(Registration.HUNDERD_BUCKS.get(), "€100" );
-        add(Registration.TWOHUNDERD_BUCKS.get(), "€200" );
+        add(Registration.ONE_COIN.get(), "$1" );
+        add(Registration.TWO_COIN.get(), "$2" );
+        add(Registration.FIVE_BUCKS.get(), "$5" );
+        add(Registration.TEN_BUCKS.get(), "$10" );
+        add(Registration.TWENTY_BUCKS.get(), "$20" );
+        add(Registration.FIFTY_BUCKS.get(), "$50" );
+        add(Registration.HUNDERD_BUCKS.get(), "$100" );
+        add(Registration.TWOHUNDERD_BUCKS.get(), "$200" );
     }
 }
