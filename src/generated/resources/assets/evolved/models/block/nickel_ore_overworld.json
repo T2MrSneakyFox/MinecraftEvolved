@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "evolved:block/test_ore_overworld"
+    "all": "evolved:block/nickel_ore_overworld"
   }
 }

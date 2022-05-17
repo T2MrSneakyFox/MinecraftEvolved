@@ -1,11 +1,8 @@
 {
   "replace": false,
   "values": [
-    "evolved:test_ore_overworld",
-    "evolved:copper_ore_overworld",
     "evolved:nickel_ore_overworld",
     "evolved:obsidian_ore_overworld",
-    "evolved:ender_ore_end",
-    "evolved:obsidian_ore_overworld"
+    "evolved:ender_ore_end"
   ]
 }

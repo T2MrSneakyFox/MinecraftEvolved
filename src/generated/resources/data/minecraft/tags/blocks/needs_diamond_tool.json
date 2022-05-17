@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "evolved:nickel_ore_overworld",
     "evolved:obsidian_ore_overworld",
     "evolved:ender_ore_end"
   ]

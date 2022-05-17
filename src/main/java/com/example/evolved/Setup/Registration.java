@@ -1,16 +1,18 @@
 package com.example.evolved.Setup;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.lwjgl.system.CallbackI;
 
 import static com.example.evolved.Evolved.MODID;
 
@@ -26,8 +28,6 @@ public class Registration {
     // blocks
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f);
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ITEM_GROUP);
-
-
 
     //template public static final RegistryObject<Item>  = ITEMS.register("", () -> new Item(ITEM_PROPERTIES));
 
@@ -45,11 +45,18 @@ public class Registration {
     public static final RegistryObject<Item> ENDER_ORE_ITEM = fromBlock(ENDER_ORE_END);
 
     //items/ingots
-    public static final RegistryObject<Item> LITHIUM_INGOT = ITEMS.register("lithium_ingot",() -> new Item(ITEM_PROPERTIES));
-    public static final RegistryObject<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot",() -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> LITHIUM_INGOT = ITEMS.register("lithium_ingot_item",() -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot_item", () -> new Item(ITEM_PROPERTIES));
+
+    //items/shards
+    public static final RegistryObject<Item> COBALT_SHARD_ITEM = ITEMS.register("cobalt_shard_item",() -> new Item(ITEM_PROPERTIES));
 
     //items/dust
-    public static final RegistryObject<Item> OBSIDIAN_DUST_ITEM = ITEMS.register("obsidian_dust", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> OBSIDIAN_DUST_ITEM = ITEMS.register("obsidian_dust_item", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COBALT_DUST_ITEM = ITEMS.register("cobalt_dust_item", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COAL_DUST_ITEM = ITEMS.register("coal_dust_item", ()-> new Item(ITEM_PROPERTIES));
+
+    //items/coins
     public static final RegistryObject<Item> ONE_COIN = ITEMS.register("1_coin", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> TWO_COIN = ITEMS.register("2_coin", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> FIVE_BUCKS = ITEMS.register("5_bucks", () -> new Item(ITEM_PROPERTIES));
@@ -58,6 +65,9 @@ public class Registration {
     public static final RegistryObject<Item> FIFTY_BUCKS = ITEMS.register("50_bucks", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> HUNDERD_BUCKS = ITEMS.register("100_bucks", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> TWOHUNDERD_BUCKS = ITEMS.register("200_bucks", () -> new Item(ITEM_PROPERTIES));
+
+    //costume tags
+    public static final Tags.IOptionalNamedTag<Item> EVOLVED_DUSTS = ItemTags.createOptional(new ResourceLocation(MODID,"evolved_dusts"));
 
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES));

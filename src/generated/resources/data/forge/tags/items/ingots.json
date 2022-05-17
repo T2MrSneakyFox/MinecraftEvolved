@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "evolved:lithium_ingot_item",
+    "evolved:cobalt_shard_item",
+    "evolved:nickel_ingot_item"
+  ]
+}

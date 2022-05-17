@@ -3,12 +3,7 @@ package com.example.evolved.datagen;
 import com.example.evolved.Evolved;
 import com.example.evolved.Setup.Registration;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
-import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.common.data.LanguageProvider;
-
-import javax.annotation.Nullable;
 
 import static com.example.evolved.Setup.ModSetup.TAB_NAME;
 
@@ -27,13 +22,15 @@ public class TutLanguageProvider extends LanguageProvider {
         //items/ores
         add(Registration.OBSIDIAN_ORE_ITEM.get(), "Obsidian Ore");
         add(Registration.NICKEL_ORE_ITEM.get(), "Nickel ore");
-        add(Registration.OBSIDIAN_ORE_ITEM.get(), "Obsidian Ore");
         add(Registration.ENDER_ORE_ITEM.get(), "Ender Ore");
         //items/ingots
-        add(Registration.COBALT_INGOT.get(), "Cobalt ingot");
+        add(Registration.COBALT_SHARD_ITEM.get(), "Cobalt shard");
         add(Registration.LITHIUM_INGOT.get(), "Lithium ingot");
+        add(Registration.NICKEL_INGOT.get(), "Nickel ingot");
         //items/dust
         add(Registration.OBSIDIAN_DUST_ITEM.get(), "Obsidian dust");
+        add(Registration.COAL_DUST_ITEM.get(), "Coal dust");
+        add(Registration.COBALT_DUST_ITEM.get(), "Cobalt dust");
         //items/money
         add(Registration.ONE_COIN.get(), "€1" );
         add(Registration.TWO_COIN.get(), "€2" );
