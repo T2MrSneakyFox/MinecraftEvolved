@@ -30,10 +30,10 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.COBALT_DUST_ITEM.get())
                 .add(Registration.OBSIDIAN_DUST_ITEM.get())
         ;
-        tag(Registration.EVOLVED_DUSTS)
-                .add(Registration.OBSIDIAN_DUST_ITEM.get())
-                .add(Registration.COBALT_DUST_ITEM.get())
-                .add(Registration.COAL_DUST_ITEM.get())
+        tag(Registration.EVOLVED_ITEMS)
+                .add(Registration.WIRE_ITEM.get())
+                .add(Registration.SALT_WATER_ITEM.get())
+                .add(Registration.ELECTRICAL_CONDUIT_ITEM.get())
         ;
     }
 
