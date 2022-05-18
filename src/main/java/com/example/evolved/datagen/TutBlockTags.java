@@ -21,14 +21,14 @@ public class TutBlockTags extends BlockTagsProvider {
                 .add(Registration.NICKEL_ORE_OVERWORLD.get())
                 .add(Registration.OBSIDIAN_ORE_OVERWORLD.get())
                 .add(Registration.ENDER_ORE_END.get())
-
+                .add(Registration.GENERATOR.get())
         ;
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(Registration.NICKEL_ORE_OVERWORLD.get())
 
         ;
         tag(BlockTags.NEEDS_IRON_TOOL)
-
+                .add(Registration.GENERATOR.get())
         ;
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)

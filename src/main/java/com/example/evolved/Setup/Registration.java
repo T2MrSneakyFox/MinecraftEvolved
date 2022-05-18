@@ -1,12 +1,20 @@
 package com.example.evolved.Setup;
 
+import com.example.evolved.blocks.Generator;
+import com.example.evolved.blocks.GeneratorBE;
+import com.example.evolved.blocks.GeneratorContainer;
+import net.minecraft.world.inventory.MenuType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -20,10 +28,15 @@ public class Registration {
 
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+    private static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES,MODID);
+    private static final DeferredRegister<MenuType<?>> CONTAINERS = DeferredRegister.create(ForgeRegistries.CONTAINERS,MODID);
+
     public static void init(){
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         BLOCKS.register(bus);
         ITEMS.register(bus);
+        BLOCK_ENTITIES.register(bus);
+        CONTAINERS.register(bus);
     }
     // blocks
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f);
@@ -72,6 +85,15 @@ public class Registration {
     //costume tags
     public static final Tags.IOptionalNamedTag<Item> EVOLVED_ITEMS = ItemTags.createOptional(new ResourceLocation(MODID,"evolved_items"));
     public static final Tags.IOptionalNamedTag<Item> MONEY = ItemTags.createOptional(new ResourceLocation(MODID,"money"));
+
+
+
+    public static final RegistryObject<Generator> GENERATOR = BLOCKS.register("coolgenerator", Generator::new);
+    public static final RegistryObject<Item> GENERATOR_ITEM = fromBlock(GENERATOR);
+    public static final RegistryObject<BlockEntityType<GeneratorBE>> GENERATOR_BE = BLOCK_ENTITIES.register("coolgenerator",()-> BlockEntityType.Builder.of(GeneratorBE::new,GENERATOR.get()).build(null));
+    public static final RegistryObject<MenuType<GeneratorContainer>> GENERATOR_CONTAINER = CONTAINERS.register("coolgenerator",
+            ()-> IForgeContainerType.create((windowId, inv, data) -> new GeneratorContainer(windowId, data.readBlockPos(),inv,inv.player)));
+
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES));
     }

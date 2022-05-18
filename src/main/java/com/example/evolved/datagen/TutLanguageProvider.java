@@ -42,5 +42,7 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.FIFTY_BUCKS.get(), "$50" );
         add(Registration.HUNDERD_BUCKS.get(), "$100" );
         add(Registration.TWOHUNDERD_BUCKS.get(), "$200" );
+        //generator
+        add(Registration.GENERATOR.get(),"Power Generator");
     }
 }
