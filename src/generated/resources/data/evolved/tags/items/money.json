@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "evolved:1_coin",
+    "evolved:2_coin",
+    "evolved:5_bucks",
+    "evolved:10_bucks",
+    "evolved:20_bucks",
+    "evolved:50_bucks",
+    "evolved:100_bucks",
+    "evolved:200_bucks"
+  ]
+}

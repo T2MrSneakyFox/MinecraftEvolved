@@ -35,6 +35,17 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.COBALT_DUST_ITEM.get())
                 .add(Registration.COAL_DUST_ITEM.get())
         ;
+        tag(Registration.MONEY)
+                .add(Registration.ONE_COIN.get())
+                .add(Registration.TWO_COIN.get())
+
+                .add(Registration.FIVE_BUCKS.get())
+                .add(Registration.TEN_BUCKS.get())
+                .add(Registration.TWENTY_BUCKS.get())
+                .add(Registration.FIFTY_BUCKS.get())
+                .add(Registration.HUNDERD_BUCKS.get())
+                .add(Registration.TWOHUNDERD_BUCKS.get())
+        ;
     }
 
     @Override

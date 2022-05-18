@@ -27,8 +27,16 @@ public class TutItemModels extends ItemModelProvider {
         singleTexture(Registration.NICKEL_INGOT.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/nickel_ingot_item"));
         // items/shards
         singleTexture(Registration.COBALT_SHARD_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/cobalt_shard_item"));
-        // items/coins
+        // items/money
+        singleTexture(Registration.ONE_COIN.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/1_coin"));
+        singleTexture(Registration.TWO_COIN.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/2_coin"));
 
+        singleTexture(Registration.FIVE_BUCKS.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/5_bucks"));
+        singleTexture(Registration.TEN_BUCKS.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/10_bucks"));
+        singleTexture(Registration.TWENTY_BUCKS.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/20_bucks"));
+        singleTexture(Registration.FIFTY_BUCKS.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/50_bucks"));
+        singleTexture(Registration.HUNDERD_BUCKS.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/100_bucks"));
+        singleTexture(Registration.TWOHUNDERD_BUCKS.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/200_bucks"));
         //items
 
 

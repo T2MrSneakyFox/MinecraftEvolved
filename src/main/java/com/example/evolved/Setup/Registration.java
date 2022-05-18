@@ -68,7 +68,7 @@ public class Registration {
 
     //costume tags
     public static final Tags.IOptionalNamedTag<Item> EVOLVED_DUSTS = ItemTags.createOptional(new ResourceLocation(MODID,"evolved_dusts"));
-
+    public static final Tags.IOptionalNamedTag<Item> MONEY = ItemTags.createOptional(new ResourceLocation(MODID,"money"));
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES));
     }
