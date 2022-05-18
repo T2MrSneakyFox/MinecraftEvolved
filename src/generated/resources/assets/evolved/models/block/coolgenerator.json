@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "evolved:block/generator_side_a",
+    "up": "evolved:block/generator_side_a",
+    "north": "evolved:block/generator_front",
+    "south": "evolved:block/generator_side_a",
+    "east": "evolved:block/generator_side_a",
+    "west": "evolved:block/generator_side_a"
+  }
+}

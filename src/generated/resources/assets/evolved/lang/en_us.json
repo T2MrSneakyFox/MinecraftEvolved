@@ -1,8 +1,9 @@
 {
+  "block.evolved.cool_generator": "Power Generator",
   "block.evolved.ender_ore_end": "Ender Ore",
   "block.evolved.nickel_ore_overworld": "Nickel ore",
   "block.evolved.obsidian_ore_overworld": "Obsidian Ore",
-  "item group.Evolved": "Evolved",
+  "item group.evolved": "mainEvolved",
   "item.evolved.100_bucks": "$100",
   "item.evolved.10_bucks": "$10",
   "item.evolved.1_coin": "$1",

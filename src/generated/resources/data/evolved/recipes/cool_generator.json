@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "evolved",
+  "pattern": [
+    "mmm",
+    "xzx",
+    "mmm"
+  ],
+  "key": {
+    "z": {
+      "item": "evolved:cobalt_dust_item"
+    },
+    "x": {
+      "tag": "forge:stone"
+    },
+    "m": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "evolved:cool_generator"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "facing=down,powered=false": {
+      "model": "evolved:block/coolgenerator",
+      "x": 90
+    },
+    "facing=up,powered=false": {
+      "model": "evolved:block/coolgenerator",
+      "x": -90
+    },
+    "facing=north,powered=false": {
+      "model": "evolved:block/coolgenerator"
+    },
+    "facing=south,powered=false": {
+      "model": "evolved:block/coolgenerator",
+      "y": 180
+    },
+    "facing=west,powered=false": {
+      "model": "evolved:block/coolgenerator",
+      "y": 270
+    },
+    "facing=east,powered=false": {
+      "model": "evolved:block/coolgenerator",
+      "y": 90
+    },
+    "facing=down,powered=true": {
+      "model": "evolved:block/coolgenerator_powered",
+      "x": 90
+    },
+    "facing=up,powered=true": {
+      "model": "evolved:block/coolgenerator_powered",
+      "x": -90
+    },
+    "facing=north,powered=true": {
+      "model": "evolved:block/coolgenerator_powered"
+    },
+    "facing=south,powered=true": {
+      "model": "evolved:block/coolgenerator_powered",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "evolved:block/coolgenerator_powered",
+      "y": 270
+    },
+    "facing=east,powered=true": {
+      "model": "evolved:block/coolgenerator_powered",
+      "y": 90
+    }
+  }
+}

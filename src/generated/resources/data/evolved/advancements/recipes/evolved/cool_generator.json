@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "evolved:cool_generator"
+    ]
+  },
+  "criteria": {
+    "cool_generator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "evolved:cobalt_dust_item"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "evolved:cool_generator"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cool_generator",
+      "has_the_recipe"
+    ]
+  ]
+}
