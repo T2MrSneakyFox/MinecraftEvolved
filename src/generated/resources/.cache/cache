@@ -18,7 +18,7 @@ c94bb16993c0aa91194289b4d3c794910006fc9b assets/evolved/models/item/nickel_ingot
 4f5abe818dfdf3d3119f93dae2236dfb30514563 assets/evolved/models/item/obsidian_dust_item.json
 09ae3ea8d51b63303167f5070566c8c5f7d51eff assets/evolved/models/item/obsidian_ingot_item.json
 fe8a6294789a1687f874d4791f67faa67dbf59cb assets/evolved/models/item/salt_water_item.json
-d4fc54dbe20e11ea5830125ec764d9168980609d data/evolved/tags/items/evolved_dusts.json
+d4fc54dbe20e11ea5830125ec764d9168980609d data/evolved/tags/items/evolved_items.json
 9d9a55619cc0747b24944edd9c9f5afb0164d7dd data/evolved/tags/items/money.json
 a9162d83c1bbf0ea02e6d19f4d9ba7320ab62b1c data/forge/tags/blocks/ores.json
 2522d81affcd72f52131101e6304f4d86bbc0cfb data/forge/tags/items/dusts.json
