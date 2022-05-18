@@ -35,6 +35,7 @@ public class Registration {
     public static final RegistryObject<Item> SALT_WATER_ITEM = ITEMS.register("salt_water_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> WIRE_ITEM = ITEMS.register("wire_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> ELECTRICAL_CONDUIT_ITEM = ITEMS.register("electrical_conduit_item", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> BUCKET_OF_SEA_WATER = ITEMS.register("bucket_of_sea_water", () -> new Item(ITEM_PROPERTIES));
 
     //items/ores
     public static final RegistryObject<Block> NICKEL_ORE_OVERWORLD = BLOCKS.register("nickel_ore_overworld", () -> new Block(ORE_PROPERTIES));
@@ -47,6 +48,8 @@ public class Registration {
     //items/ingots
     public static final RegistryObject<Item> LITHIUM_INGOT = ITEMS.register("lithium_ingot_item",() -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot_item", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> OBSIDIAN_INGOT_ITEM = ITEMS.register("obsidian_ingot_item", ()-> new Item(ITEM_PROPERTIES));
+
 
     //items/shards
     public static final RegistryObject<Item> COBALT_SHARD_ITEM = ITEMS.register("cobalt_shard_item",() -> new Item(ITEM_PROPERTIES));

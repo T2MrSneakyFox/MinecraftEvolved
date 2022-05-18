@@ -3,7 +3,6 @@ package com.example.evolved.datagen;
 import com.example.evolved.Evolved;
 import com.example.evolved.Setup.Registration;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -15,22 +14,26 @@ public class TutItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        ResourceLocation rl = new ResourceLocation(Evolved.MODID, "name");
-
         // items/ores
         withExistingParent(Registration.NICKEL_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/nickel_ore_overworld"));
 
         // items/dusts
         singleTexture(Registration.COBALT_DUST_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/cobalt_dust_item"));
         singleTexture(Registration.COAL_DUST_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/coal_dust_item"));
+        singleTexture(Registration.OBSIDIAN_DUST_ITEM.get().getRegistryName().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/obsidian_dust_item"));
+
         // items/ingots
         singleTexture(Registration.NICKEL_INGOT.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/nickel_ingot_item"));
+        singleTexture(Registration.OBSIDIAN_INGOT_ITEM.get().getRegistryName().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/obsidian_ingot_item"));
+
         // items/shards
         singleTexture(Registration.COBALT_SHARD_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/cobalt_shard_item"));
+        
         // items/coins
 
         //items
         singleTexture(Registration.SALT_WATER_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/sea_salt_item"));
+        singleTexture(Registration.BUCKET_OF_SEA_WATER.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/bucket_of_sea_water"));
 
 
 

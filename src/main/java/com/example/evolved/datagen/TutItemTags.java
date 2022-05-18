@@ -34,6 +34,7 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.WIRE_ITEM.get())
                 .add(Registration.SALT_WATER_ITEM.get())
                 .add(Registration.ELECTRICAL_CONDUIT_ITEM.get())
+                .add(Registration.BUCKET_OF_SEA_WATER.get())
         ;
     }
 

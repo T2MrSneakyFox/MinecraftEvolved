@@ -2,7 +2,7 @@
   "block.evolved.ender_ore_end": "Ender Ore",
   "block.evolved.nickel_ore_overworld": "Nickel ore",
   "block.evolved.obsidian_ore_overworld": "Obsidian Ore",
-  "item group.Evolved": "Tutorial",
+  "item group.Evolved": "Evolved",
   "item.evolved.100_bucks": "$100",
   "item.evolved.10_bucks": "$10",
   "item.evolved.1_coin": "$1",
@@ -11,6 +11,7 @@
   "item.evolved.2_coin": "$2",
   "item.evolved.50_bucks": "$50",
   "item.evolved.5_bucks": "$5",
+  "item.evolved.bucket_of_sea_water": "Bucket of Saltwater",
   "item.evolved.coal_dust_item": "Coal dust",
   "item.evolved.cobalt_dust_item": "Cobalt dust",
   "item.evolved.cobalt_shard_item": "Cobalt shard",
@@ -18,6 +19,7 @@
   "item.evolved.lithium_ingot_item": "Lithium ingot",
   "item.evolved.nickel_ingot_item": "Nickel ingot",
   "item.evolved.obsidian_dust_item": "Obsidian dust",
+  "item.evolved.obsidian_ingot_item": "Obsidian ingot",
   "item.evolved.salt_water_item": "Salt water",
   "item.evolved.wire_item": "Copper wire"
 }

@@ -14,11 +14,12 @@ public class TutLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add("item group." + TAB_NAME, "Tutorial");
+        add("item group." + TAB_NAME, "Evolved");
         //items
         add(Registration.SALT_WATER_ITEM.get(), "Salt water");
         add(Registration.ELECTRICAL_CONDUIT_ITEM.get(), "Electrical conduit");
         add(Registration.WIRE_ITEM.get(), "Copper wire");
+        add(Registration.BUCKET_OF_SEA_WATER.get(), "Bucket of Saltwater");
         //items/ores
         add(Registration.OBSIDIAN_ORE_ITEM.get(), "Obsidian Ore");
         add(Registration.NICKEL_ORE_ITEM.get(), "Nickel ore");
@@ -27,6 +28,7 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.COBALT_SHARD_ITEM.get(), "Cobalt shard");
         add(Registration.LITHIUM_INGOT.get(), "Lithium ingot");
         add(Registration.NICKEL_INGOT.get(), "Nickel ingot");
+        add(Registration.OBSIDIAN_INGOT_ITEM.get(), "Obsidian ingot");
         //items/dust
         add(Registration.OBSIDIAN_DUST_ITEM.get(), "Obsidian dust");
         add(Registration.COAL_DUST_ITEM.get(), "Coal dust");
