@@ -23,66 +23,6 @@ public class TutBlockStates extends BlockStateProvider {
 
     }
 
-//    private void registerPowergen(){
-//        BlockModelBuilder frame = models().getBuilder("block/generator/main");
-//        frame.parent(models().getExistingFile(mcLoc("cube")));
-//
-//        floatingCube(frame,0f,0f,0f,1f,16f,1f);
-//        floatingCube(frame,15f,0f,0f,16f,16f,1f);
-//        floatingCube(frame,0f,0f,15f,1f,16f,16f);
-//        floatingCube(frame,15f,0f,15f,16f,16f,16f);
-//
-//        floatingCube(frame,1f,0f,0f,15f,1f,15f);
-//        floatingCube(frame,1f,15f,0f,15f,16f,15f);
-//        floatingCube(frame,1f,0f,15f,15f,1f,15f);
-//        floatingCube(frame,1f,15f,15f,15f,16f,15f);
-//
-//        floatingCube(frame,0f,0f,1f,1f,16f,15f);
-//        floatingCube(frame,15f,0f,1f,16f,16f,15f);
-//        floatingCube(frame,0f,15f,1f,1f,16f,15f);
-//        floatingCube(frame,15f,15f,1f,16f,16f,15f);
-//
-//        floatingCube(frame,1f,1f,1f,15f,15f,15f);
-//
-//        frame.texture("side",modLoc("block/generator_side_A"));
-//        frame.texture("particle",modLoc("block/generator_front"));
-//
-//
-//    }
-//
-//    private void floatingCube(BlockModelBuilder builder,float fx,float fy,float fz,float tx,float ty,float tz){
-//        builder.element()
-//                .from(fx,fy,fz)
-//                .to(tx,ty,tz)
-//                .allFaces((direction, faceBuilder) -> faceBuilder.texture("#side"))
-//                .end();
-//    }
-//
-//    private void createGeneratorModel(Block block, BlockModelBuilder frame){
-//        BlockModelBuilder singleOff = models().getBuilder("block/generator/singleoff")
-//                .element().from(3,3,3).to(13,13,13).face(Direction.DOWN).texture("#single").end().end()
-//                .texture("single",modLoc("block/generator_front"));
-//        BlockModelBuilder singleOn = models().getBuilder("block/generator/singleon")
-//                .element().from(3,3,3).to(13,13,13).face(Direction.DOWN).texture("#single").end().end()
-//                .texture("single",modLoc("block/generator_front_on"));
-//
-//        MultiPartBlockStateBuilder bld =getMultipartBuilder(block);
-//
-//        bld.part().modelFile(frame).addModel();
-//
-//        BlockModelBuilder [] models = new BlockModelBuilder[]{singleOff,singleOn};
-//        for (int i = 0; i < 2; i++){
-//            boolean powered = i ==1;
-//            bld.part().modelFile(models[i]).addModel().condition(BlockStateProperties.POWERED,powered);
-//            bld.part().modelFile(models[i]).rotationX(180).addModel().condition(BlockStateProperties.POWERED, powered);
-//            bld.part().modelFile(models[i]).rotationX(90).addModel().condition(BlockStateProperties.POWERED, powered);
-//            bld.part().modelFile(models[i]).rotationX(270).addModel().condition(BlockStateProperties.POWERED, powered);
-//            bld.part().modelFile(models[i]).rotationY(90).rotationX(90).addModel().condition(BlockStateProperties.POWERED, powered);
-//            bld.part().modelFile(models[i]).rotationY(270).rotationX(90).addModel().condition(BlockStateProperties.POWERED, powered);
-//        }
-//
-//    }
-
     private void registerGeneratorBlock(){
         ResourceLocation txt = new ResourceLocation(mainEvolved.MODID,"block/generator_side_a");
         BlockModelBuilder modelFirstBlock = models().cube("coolgenerator"

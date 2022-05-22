@@ -39,6 +39,9 @@ public class TutBlockTags extends BlockTagsProvider {
                 .add(Registration.ENDER_ORE_END.get())
 
         ;
+        tag(Registration.TAG_NICKEL_ORE)
+                .add(Registration.NICKEL_ORE_OVERWORLD.get())
+        ;
     }
     @Override
     public String getName() {

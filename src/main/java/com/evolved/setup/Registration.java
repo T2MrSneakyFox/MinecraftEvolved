@@ -3,6 +3,7 @@ package com.evolved.setup;
 import com.evolved.blocks.Generator;
 import com.evolved.blocks.GeneratorBE;
 import com.evolved.blocks.GeneratorContainer;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -43,10 +44,10 @@ public class Registration {
     //template public static final RegistryObject<Item>  = ITEMS.register("", () -> new Item(ITEM_PROPERTIES));
 
     //items
-    public static final RegistryObject<Item> SALT_WATER_ITEM = ITEMS.register("salt_water_item", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> SEA_SALT_ITEM = ITEMS.register("salt_water_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> WIRE_ITEM = ITEMS.register("wire_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> ELECTRICAL_CONDUIT_ITEM = ITEMS.register("electrical_conduit_item", () -> new Item(ITEM_PROPERTIES));
-    public static final RegistryObject<Item> BUCKET_OF_SEA_WATER = ITEMS.register("bucket_of_sea_water", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> BUCKET_OF_SALT_WATER = ITEMS.register("bucket_of_sea_water", () -> new Item(ITEM_PROPERTIES));
 
     //items/ores
     public static final RegistryObject<Block> NICKEL_ORE_OVERWORLD = BLOCKS.register("nickel_ore_overworld", () -> new Block(ORE_PROPERTIES));
@@ -62,8 +63,12 @@ public class Registration {
     public static final RegistryObject<Item> OBSIDIAN_INGOT_ITEM = ITEMS.register("obsidian_ingot_item", ()-> new Item(ITEM_PROPERTIES));
 
 
-    //items/shards
+    //items/chunks & shards
     public static final RegistryObject<Item> COBALT_SHARD_ITEM = ITEMS.register("cobalt_shard_item",() -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> LITHIUM_CHUNK_ITEM = ITEMS.register("lithium_chunk_item", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> NICKEL_CHUNK_ITEM = ITEMS.register("nickel_chunk_item", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> OBSIDIAN_SHARD_ITEM = ITEMS.register("obsidian_shard_item", () -> new Item(ITEM_PROPERTIES));
+
 
     //items/dust
     public static final RegistryObject<Item> OBSIDIAN_DUST_ITEM = ITEMS.register("obsidian_dust_item", () -> new Item(ITEM_PROPERTIES));
@@ -81,10 +86,19 @@ public class Registration {
     public static final RegistryObject<Item> TWOHUNDERD_BUCKS = ITEMS.register("200_bucks", () -> new Item(ITEM_PROPERTIES));
 
     //costume tags
-    public static final Tags.IOptionalNamedTag<Item> EVOLVED_ITEMS = ItemTags.createOptional(new ResourceLocation(MODID,"evolved_items"));
+    //costumeTags/items
+    //costumeTags/ores
+    public static final Tags.IOptionalNamedTag<Block> TAG_NICKEL_ORE = BlockTags.createOptional(new ResourceLocation(MODID, "nickel_ore"));
+    public static final Tags.IOptionalNamedTag<Item> TAG_NICKEL_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(MODID, "nickel_ore"));
+
+    public static final Tags.IOptionalNamedTag<Block> TAG_LITHIUM_DUST = BlockTags.createOptional(new ResourceLocation(MODID, "lithium_shard"));
+    public static final Tags.IOptionalNamedTag<Item> TAG_LITHIUM_SHARD_ITEM = ItemTags.createOptional(new ResourceLocation(MODID, "lithium shard"));
+
+    //costumeTags/ores/rawChunk
+    //costumeTags/ingots
+    //costumeTags/Generators
+    //costumeTags/Money
     public static final Tags.IOptionalNamedTag<Item> MONEY = ItemTags.createOptional(new ResourceLocation(MODID,"money"));
-
-
 
     public static final RegistryObject<Generator> GENERATOR = BLOCKS.register("cool_generator", Generator::new);
     public static final RegistryObject<Item> GENERATOR_ITEM = fromBlock(GENERATOR);

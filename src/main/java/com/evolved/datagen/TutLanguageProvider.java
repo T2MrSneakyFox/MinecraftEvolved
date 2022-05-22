@@ -15,10 +15,10 @@ public class TutLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         add("item group." + ModSetup.TAB_NAME, "mainEvolved");
         //items
-        add(Registration.SALT_WATER_ITEM.get(), "Salt water");
+        add(Registration.SEA_SALT_ITEM.get(), "Salt water");
         add(Registration.ELECTRICAL_CONDUIT_ITEM.get(), "Electrical conduit");
         add(Registration.WIRE_ITEM.get(), "Copper wire");
-        add(Registration.BUCKET_OF_SEA_WATER.get(), "Bucket of Saltwater");
+        add(Registration.BUCKET_OF_SALT_WATER.get(), "Bucket of Saltwater");
         //items/ores
         add(Registration.OBSIDIAN_ORE_ITEM.get(), "Obsidian Ore");
         add(Registration.NICKEL_ORE_ITEM.get(), "Nickel ore");

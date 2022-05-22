@@ -30,11 +30,15 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.COBALT_DUST_ITEM.get())
                 .add(Registration.OBSIDIAN_DUST_ITEM.get())
         ;
-        tag(Registration.EVOLVED_ITEMS)
-                .add(Registration.WIRE_ITEM.get())
-                .add(Registration.SALT_WATER_ITEM.get())
-                .add(Registration.ELECTRICAL_CONDUIT_ITEM.get())
-                .add(Registration.BUCKET_OF_SEA_WATER.get())
+//        tag(Registration.EVOLVED_ITEMS)
+//                .add(Registration.WIRE_ITEM.get())
+//                .add(Registration.SALT_WATER_ITEM.get())
+//                .add(Registration.ELECTRICAL_CONDUIT_ITEM.get())
+//                .add(Registration.BUCKET_OF_SEA_WATER.get())
+//        ;
+
+        tag(Registration.TAG_NICKEL_ORE_ITEM)
+                .add(Registration.NICKEL_ORE_ITEM.get())
         ;
         tag(Registration.MONEY)
                 .add(Registration.ONE_COIN.get())

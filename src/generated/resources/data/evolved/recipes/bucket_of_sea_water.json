@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "evolved",
+  "pattern": [
+    "S",
+    "B"
+  ],
+  "key": {
+    "S": {
+      "item": "evolved:salt_water_item"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "evolved:bucket_of_sea_water"
+  }
+}

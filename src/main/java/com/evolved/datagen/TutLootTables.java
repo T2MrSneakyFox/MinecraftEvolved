@@ -15,6 +15,7 @@ public class TutLootTables extends BaseLootTableProvider implements DataProvider
     @Override
     protected void addTables() {
         lootTables.put(Registration.GENERATOR.get(), createStandardTable("generator",Registration.GENERATOR.get(),Registration.GENERATOR_BE.get()));
+        lootTables.put(Registration.NICKEL_ORE_OVERWORLD.get(), createSilkTouchTable("nickel_ore_overworld", Registration.NICKEL_ORE_OVERWORLD.get(), Registration.NICKEL_ORE_ITEM.get(), 1, 3));
     }
 
 

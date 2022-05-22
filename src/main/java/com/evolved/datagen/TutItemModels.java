@@ -39,11 +39,11 @@ public class TutItemModels extends ItemModelProvider {
         singleTexture(Registration.HUNDERD_BUCKS.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/100_bucks"));
         singleTexture(Registration.TWOHUNDERD_BUCKS.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/200_bucks"));
         //generator/item
-        singleTexture(Registration.GENERATOR_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/generator_front"));
+        singleTexture(Registration.GENERATOR_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"),"layer0",modLoc("block/generator_front"));
 
         //items
-        singleTexture(Registration.SALT_WATER_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/sea_salt_item"));
-        singleTexture(Registration.BUCKET_OF_SEA_WATER.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/bucket_of_sea_water"));
+        singleTexture(Registration.SEA_SALT_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/sea_salt_item"));
+        singleTexture(Registration.BUCKET_OF_SALT_WATER.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/bucket_of_sea_water"));
 
 
 

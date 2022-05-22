@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "evolved:bucket_of_sea_water"
+    ]
+  },
+  "criteria": {
+    "sea_salt_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "evolved:salt_water_item"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "evolved:bucket_of_sea_water"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sea_salt_item",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "evolved:nickel_ore"
+  },
+  "result": "evolved:nickel_ingot_item",
+  "experience": 1.0,
+  "cookingtime": 100
+}
