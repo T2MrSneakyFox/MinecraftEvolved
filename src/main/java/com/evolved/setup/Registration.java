@@ -92,7 +92,7 @@ public class Registration {
     public static final Tags.IOptionalNamedTag<Item> TAG_NICKEL_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(MODID, "nickel_ore"));
 
     public static final Tags.IOptionalNamedTag<Block> TAG_LITHIUM_DUST = BlockTags.createOptional(new ResourceLocation(MODID, "lithium_shard"));
-    public static final Tags.IOptionalNamedTag<Item> TAG_LITHIUM_SHARD_ITEM = ItemTags.createOptional(new ResourceLocation(MODID, "lithium shard"));
+    public static final Tags.IOptionalNamedTag<Item> TAG_LITHIUM_SHARD_ITEM = ItemTags.createOptional(new ResourceLocation(MODID, "lithium_shard"));
 
     //costumeTags/ores/rawChunk
     //costumeTags/ingots
