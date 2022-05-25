@@ -40,6 +40,7 @@ public class Registration {
     // blocks
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f);
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ITEM_GROUP);
+    public static final BlockBehaviour.Properties BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(2f);
 
     //template public static final RegistryObject<Item>  = ITEMS.register("", () -> new Item(ITEM_PROPERTIES));
 
@@ -48,6 +49,7 @@ public class Registration {
     public static final RegistryObject<Item> WIRE_ITEM = ITEMS.register("wire_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> ELECTRICAL_CONDUIT_ITEM = ITEMS.register("electrical_conduit_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> BUCKET_OF_SALT_WATER = ITEMS.register("bucket_of_sea_water", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Block> ELECTRICAL_PILLAR = BLOCKS.register("electrical_pillar", () -> new Block(BLOCK_PROPERTIES));
 
     //items/ores
     public static final RegistryObject<Block> NICKEL_ORE_OVERWORLD = BLOCKS.register("nickel_ore_overworld", () -> new Block(ORE_PROPERTIES));
@@ -58,14 +60,14 @@ public class Registration {
     public static final RegistryObject<Item> ENDER_ORE_ITEM = fromBlock(ENDER_ORE_END);
 
     //items/ingots
-    public static final RegistryObject<Item> LITHIUM_INGOT = ITEMS.register("lithium_ingot_item",() -> new Item(ITEM_PROPERTIES));
+
     public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> OBSIDIAN_INGOT_ITEM = ITEMS.register("obsidian_ingot_item", ()-> new Item(ITEM_PROPERTIES));
 
 
     //items/chunks & shards
     public static final RegistryObject<Item> COBALT_SHARD_ITEM = ITEMS.register("cobalt_shard_item",() -> new Item(ITEM_PROPERTIES));
-    public static final RegistryObject<Item> LITHIUM_CHUNK_ITEM = ITEMS.register("lithium_chunk_item", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> LITHIUM_SHARD_ITEM = ITEMS.register("lithium_chunk_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> NICKEL_CHUNK_ITEM = ITEMS.register("nickel_chunk_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> OBSIDIAN_SHARD_ITEM = ITEMS.register("obsidian_shard_item", () -> new Item(ITEM_PROPERTIES));
 
@@ -74,6 +76,7 @@ public class Registration {
     public static final RegistryObject<Item> OBSIDIAN_DUST_ITEM = ITEMS.register("obsidian_dust_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COBALT_DUST_ITEM = ITEMS.register("cobalt_dust_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COAL_DUST_ITEM = ITEMS.register("coal_dust_item", ()-> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> LITHIUM_DUST_ITEM = ITEMS.register("lithium_dust_item", ()-> new Item(ITEM_PROPERTIES));
 
     //items/coins
     public static final RegistryObject<Item> ONE_COIN = ITEMS.register("1_coin", () -> new Item(ITEM_PROPERTIES));
@@ -87,12 +90,14 @@ public class Registration {
 
     //costume tags
     //costumeTags/items
+
     //costumeTags/ores
     public static final Tags.IOptionalNamedTag<Block> TAG_NICKEL_ORE = BlockTags.createOptional(new ResourceLocation(MODID, "nickel_ore"));
     public static final Tags.IOptionalNamedTag<Item> TAG_NICKEL_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(MODID, "nickel_ore"));
 
-    public static final Tags.IOptionalNamedTag<Block> TAG_LITHIUM_DUST = BlockTags.createOptional(new ResourceLocation(MODID, "lithium_shard"));
+    public static final Tags.IOptionalNamedTag<Item> TAG_LITHIUM_DUST_ITEM = ItemTags.createOptional(new ResourceLocation(MODID, "lithium_dust"));
     public static final Tags.IOptionalNamedTag<Item> TAG_LITHIUM_SHARD_ITEM = ItemTags.createOptional(new ResourceLocation(MODID, "lithium_shard"));
+
 
     //costumeTags/ores/rawChunk
     //costumeTags/ingots

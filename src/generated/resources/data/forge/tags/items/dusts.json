@@ -3,6 +3,7 @@
   "values": [
     "evolved:coal_dust_item",
     "evolved:cobalt_dust_item",
-    "evolved:obsidian_dust_item"
+    "evolved:obsidian_dust_item",
+    "evolved:lithium_dust_item"
   ]
 }

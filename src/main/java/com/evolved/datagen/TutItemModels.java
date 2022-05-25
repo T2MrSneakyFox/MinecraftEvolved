@@ -21,6 +21,7 @@ public class TutItemModels extends ItemModelProvider {
         singleTexture(Registration.COBALT_DUST_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/cobalt_dust_item"));
         singleTexture(Registration.COAL_DUST_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/coal_dust_item"));
         singleTexture(Registration.OBSIDIAN_DUST_ITEM.get().getRegistryName().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/obsidian_dust_item"));
+        singleTexture(Registration.LITHIUM_DUST_ITEM.get().getRegistryName().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/lithium_dust_item"));
 
         // items/ingots
         singleTexture(Registration.NICKEL_INGOT.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/nickel_ingot_item"));
@@ -28,6 +29,7 @@ public class TutItemModels extends ItemModelProvider {
 
         // items/shards
         singleTexture(Registration.COBALT_SHARD_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/cobalt_shard_item"));
+        singleTexture(Registration.LITHIUM_SHARD_ITEM.get().getRegistryName().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/lithium_shard_item"));
         // items/money
         singleTexture(Registration.ONE_COIN.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/1_coin"));
         singleTexture(Registration.TWO_COIN.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/2_coin"));

@@ -25,13 +25,14 @@ public class TutLanguageProvider extends LanguageProvider {
         add(Registration.ENDER_ORE_ITEM.get(), "Ender Ore");
         //items/ingots
         add(Registration.COBALT_SHARD_ITEM.get(), "Cobalt shard");
-        add(Registration.LITHIUM_INGOT.get(), "Lithium ingot");
+        add(Registration.LITHIUM_SHARD_ITEM.get(), "Lithium ingot");
         add(Registration.NICKEL_INGOT.get(), "Nickel ingot");
         add(Registration.OBSIDIAN_INGOT_ITEM.get(), "Obsidian ingot");
         //items/dust
         add(Registration.OBSIDIAN_DUST_ITEM.get(), "Obsidian dust");
         add(Registration.COAL_DUST_ITEM.get(), "Coal dust");
         add(Registration.COBALT_DUST_ITEM.get(), "Cobalt dust");
+        add(Registration.LITHIUM_DUST_ITEM.get(), "Lithium dust");
         //items/money
         add(Registration.ONE_COIN.get(), "$1" );
         add(Registration.TWO_COIN.get(), "$2" );

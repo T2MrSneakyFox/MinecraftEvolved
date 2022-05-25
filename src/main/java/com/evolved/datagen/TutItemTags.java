@@ -22,13 +22,13 @@ public class TutItemTags extends ItemTagsProvider {
                 .add(Registration.OBSIDIAN_ORE_ITEM.get())
                 .add(Registration.ENDER_ORE_ITEM.get());
         tag(Tags.Items.INGOTS)
-                .add(Registration.LITHIUM_INGOT.get())
                 .add(Registration.COBALT_SHARD_ITEM.get())
                 .add(Registration.NICKEL_INGOT.get());
         tag(Tags.Items.DUSTS)
                 .add(Registration.COAL_DUST_ITEM.get())
                 .add(Registration.COBALT_DUST_ITEM.get())
                 .add(Registration.OBSIDIAN_DUST_ITEM.get())
+                .add(Registration.LITHIUM_DUST_ITEM.get())
         ;
 //        tag(Registration.EVOLVED_ITEMS)
 //                .add(Registration.WIRE_ITEM.get())
@@ -40,10 +40,15 @@ public class TutItemTags extends ItemTagsProvider {
         tag(Registration.TAG_NICKEL_ORE_ITEM)
                 .add(Registration.NICKEL_ORE_ITEM.get())
         ;
+        tag(Registration.TAG_LITHIUM_DUST_ITEM)
+                .add(Registration.LITHIUM_DUST_ITEM.get())
+        ;
+        tag(Registration.TAG_LITHIUM_SHARD_ITEM)
+                .add(Registration.LITHIUM_SHARD_ITEM.get())
+        ;
         tag(Registration.MONEY)
                 .add(Registration.ONE_COIN.get())
                 .add(Registration.TWO_COIN.get())
-
                 .add(Registration.FIVE_BUCKS.get())
                 .add(Registration.TEN_BUCKS.get())
                 .add(Registration.TWENTY_BUCKS.get())
