@@ -40,7 +40,7 @@ public class Registration {
     // blocks
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f);
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ITEM_GROUP);
-    public static final BlockBehaviour.Properties BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(2f);
+    public static final BlockBehaviour.Properties BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.AIR).strength(2f);
 
     //template public static final RegistryObject<Item>  = ITEMS.register("", () -> new Item(ITEM_PROPERTIES));
 
@@ -49,7 +49,8 @@ public class Registration {
     public static final RegistryObject<Item> WIRE_ITEM = ITEMS.register("wire_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> ELECTRICAL_CONDUIT_ITEM = ITEMS.register("electrical_conduit_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> BUCKET_OF_SALT_WATER = ITEMS.register("bucket_of_sea_water", () -> new Item(ITEM_PROPERTIES));
-    public static final RegistryObject<Block> ELECTRICAL_PILLAR = BLOCKS.register("electrical_pillar", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> ELECTRICAL_PILLAR = BLOCKS.register("electrical_pillar_item", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> ELECTRICAL_PILLAR_ITEM = fromBlock(ELECTRICAL_PILLAR);
 
     //items/ores
     public static final RegistryObject<Block> NICKEL_ORE_OVERWORLD = BLOCKS.register("nickel_ore_overworld", () -> new Block(ORE_PROPERTIES));
@@ -60,7 +61,6 @@ public class Registration {
     public static final RegistryObject<Item> ENDER_ORE_ITEM = fromBlock(ENDER_ORE_END);
 
     //items/ingots
-
     public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot_item", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> OBSIDIAN_INGOT_ITEM = ITEMS.register("obsidian_ingot_item", ()-> new Item(ITEM_PROPERTIES));
 
@@ -90,6 +90,7 @@ public class Registration {
 
     //costume tags
     //costumeTags/items
+    public static final  Tags.IOptionalNamedTag <Block> TAG_ELECTRICAL_PILLAR = BlockTags.createOptional(new ResourceLocation(MODID, "electrical_pillar"));
 
     //costumeTags/ores
     public static final Tags.IOptionalNamedTag<Block> TAG_NICKEL_ORE = BlockTags.createOptional(new ResourceLocation(MODID, "nickel_ore"));
@@ -104,7 +105,7 @@ public class Registration {
     //costumeTags/Generators
     //costumeTags/Money
     public static final Tags.IOptionalNamedTag<Item> MONEY = ItemTags.createOptional(new ResourceLocation(MODID,"money"));
-
+    //items/blocks/generator
     public static final RegistryObject<Generator> GENERATOR = BLOCKS.register("cool_generator", Generator::new);
     public static final RegistryObject<Item> GENERATOR_ITEM = fromBlock(GENERATOR);
     public static final RegistryObject<BlockEntityType<GeneratorBE>> GENERATOR_BE = BLOCK_ENTITIES.register("cool_generator",()-> BlockEntityType.Builder.of(GeneratorBE::new,GENERATOR.get()).build(null));

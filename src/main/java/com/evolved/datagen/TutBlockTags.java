@@ -42,6 +42,8 @@ public class TutBlockTags extends BlockTagsProvider {
         tag(Registration.TAG_NICKEL_ORE)
                 .add(Registration.NICKEL_ORE_OVERWORLD.get())
         ;
+        tag(Registration.TAG_ELECTRICAL_PILLAR)
+                .add(Registration.ELECTRICAL_PILLAR.get());
     }
     @Override
     public String getName() {

@@ -19,7 +19,9 @@ public class TutBlockStates extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         registerGeneratorBlock();
+        electricalPillarBlock();
         simpleBlock(Registration.NICKEL_ORE_OVERWORLD.get());
+        simpleBlock(Registration.ELECTRICAL_PILLAR.get());
 
     }
 
@@ -37,6 +39,11 @@ public class TutBlockStates extends BlockStateProvider {
             }
         });
     }
+
+    private void electricalPillarBlock(){
+
+    }
+
 
     private void orientedBlock(Block block, Function<BlockState, ModelFile> modelFunc) {
         getVariantBuilder(block)

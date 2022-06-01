@@ -16,6 +16,7 @@ public class TutItemModels extends ItemModelProvider {
     protected void registerModels() {
         // items/ores
         withExistingParent(Registration.NICKEL_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/nickel_ore_overworld"));
+        withExistingParent(Registration.ELECTRICAL_PILLAR_ITEM.get().getRegistryName().getPath(), modLoc("block/electrical_pillar_item"));
 
         // items/dusts
         singleTexture(Registration.COBALT_DUST_ITEM.get().getRegistryName().getPath(),mcLoc("item/generated"), "layer0", modLoc("item/cobalt_dust_item"));

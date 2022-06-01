@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "evolved:block/electrical_pillar_item"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 {
   "block.evolved.cool_generator": "Power Generator",
+  "block.evolved.electrical_pillar_item": "Electrical pillar",
   "block.evolved.ender_ore_end": "Ender Ore",
   "block.evolved.nickel_ore_overworld": "Nickel ore",
   "block.evolved.obsidian_ore_overworld": "Obsidian Ore",
@@ -22,6 +23,5 @@
   "item.evolved.nickel_ingot_item": "Nickel ingot",
   "item.evolved.obsidian_dust_item": "Obsidian dust",
   "item.evolved.obsidian_ingot_item": "Obsidian ingot",
-  "item.evolved.salt_water_item": "Salt water",
-  "item.evolved.wire_item": "Copper wire"
+  "item.evolved.salt_water_item": "Salt water"
 }

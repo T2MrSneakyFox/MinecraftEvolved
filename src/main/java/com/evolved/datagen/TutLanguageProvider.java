@@ -17,7 +17,7 @@ public class TutLanguageProvider extends LanguageProvider {
         //items
         add(Registration.SEA_SALT_ITEM.get(), "Salt water");
         add(Registration.ELECTRICAL_CONDUIT_ITEM.get(), "Electrical conduit");
-        add(Registration.WIRE_ITEM.get(), "Copper wire");
+        add(Registration.ELECTRICAL_PILLAR.get(), "Electrical pillar");
         add(Registration.BUCKET_OF_SALT_WATER.get(), "Bucket of Saltwater");
         //items/ores
         add(Registration.OBSIDIAN_ORE_ITEM.get(), "Obsidian Ore");
